@@ -6,8 +6,8 @@ if(isset($_REQUEST['submit']))
 	
 	$receive=$_POST['email'];
 	$subject="SMOLOV CALCULATOR";
-	$body=$_POST['body'];
-	
+	$body=file_get_contents("sample_page.html");
+	 
 	include 'PHPMailer/class.phpmailer.php';
 	//require_once 'PHPMailer/PHPMailerAutoload.php';
 	//require 'PHPMailer/PHPMailerAutoload.php';
